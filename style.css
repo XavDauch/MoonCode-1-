@@ -21,14 +21,11 @@ h2 {
   font-size: 27px;
 }
 
-
-
-
 /* Style qui s'applique au header */
 
 header {
   width: 100%;
-  background-color: #335b8e;
+  background-color: #068b18;
   position: relative;
   padding: 2em 0 10em 0;
 }
@@ -56,7 +53,7 @@ header {
 
 .header_textSub {
   /* Pour le soulignage du h1 */
-  background-image: linear-gradient(to right, #8288a2 0%, #8288a2 100%);
+  background-image: linear-gradient(to right, #66f85b 0%, #66f85b 100%);
   background-repeat: repeat-x;
   background-position: 0 100%;
   background-size: 100% 0.4em;
@@ -85,7 +82,7 @@ header {
 }
 
 .header_img {
-  width: 50%;
+  width: 40%;
 }
 
 .header_img img {
@@ -172,39 +169,41 @@ nav {
 
 /* Section Offre */
 
-.offre {
-  color: #335b8e;
+.propos {
+  color: #338e36;
   padding: 4em 0;
 }
 
-.offre_haut {
+.propos_haut {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  /* align-items: center;
+  justify-content: start; */
 }
 
-.offre_texte {
+.propos_texte {
   padding: 2em 0;
   width: 40%;
 }
 
-.offre_texte h2 {
+.propos_texte h2 {
   padding: 1em 0;
 }
 
-.offre p {
-  color: #335b8e;
+.propos p {
+  color: #068b18;
   font-weight: 300;
   font-size: 18px;
 }
 
-.offre_image {
+.propos_image {
   text-align: center;
+
 }
 
-.offre_image img {
-  width: 400px;
-  height: 399px;
+.propos_image img {
+  width: auto;
+  height: 250px;
   border-radius: 50px;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
@@ -213,7 +212,7 @@ nav {
 }
 
 .bouton {
-  background-color: #7582a2;
+  background-color: #66f85b;
   width: 325px;
   height: 65px;
   margin: 4em auto;
@@ -229,50 +228,51 @@ nav {
   line-height: 65px;
 }
 
-.offre_bas {
+.propos_bas {
   text-align: center;
+  background-color: #068b18;
 }
 
-.offre_bas img {
+.propos_bas img {
   width: 200px;
 }
 
-/* SectionAlunissages */
+/* Sectionprojets */
 
-.alunissages {
-  background-color: #335b8e;
+.projets {
+  background-color: #068b18;
   color: #ffffff;
   padding: 3em 0;
 }
 
-.alunissages_container {
+.projets_container {
   width: 80%;
   margin: 0 auto;
 }
 
-.alunissages h2 {
+.projets h2 {
   text-align: right;
   padding: 2em 6em 4em 0;
 }
 
-.trip {
+.proj {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2em 0;
 }
 
-.trip:nth-of-type(2),
-.trip:nth-of-type(4) {
+.proj:nth-of-type(2),
+.proj:nth-of-type(4) {
   flex-direction: row-reverse;
 }
 
-.trip_image {
+.proj_image {
   width: 40%;
   text-align: center;
 }
 
-.trip_image img {
+.proj_image img {
   width: 400px;
   height: 351px;
   border-radius: 12%;
@@ -283,24 +283,24 @@ nav {
   border: #ffffff solid 5px;
 }
 
-.trip_texte {
+.proj_texte {
   width: 40%;
   margin-left: 2em;
 }
 
-.trip_texte h3 {
+.proj_texte h3 {
   font-size: 21px;
 }
 
-.trip_texte p {
+.proj_texte p {
   width: 80%;
   font-weight: 500;
   font-size: 18px;
   padding: 2em 0;
 }
 
-.trip_reservation {
-  background-color: #5e8cc7;
+.proj_lireplus {
+  background-color: #66f85b;
   width: 200px;
   height: 45px;
   color: #ffffff;
@@ -314,14 +314,14 @@ nav {
   line-height: 45px;
 }
 
-/* Team */
+/* Articles */
 
-.team {
+.articles {
   width: 80%;
   margin: 0 auto;
 }
 
-.team_container {
+.articles_container {
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
@@ -329,13 +329,13 @@ nav {
   padding: 5em 0;
 }
 
-.team h2 {
+.articles h2 {
   padding: 3em 0 1em 0;
   text-align: center;
   color: #335b8e;
 }
 
-.team_member {
+.articles_member {
   width: 40%;
   display: flex;
   justify-content: space-around;
@@ -343,7 +343,7 @@ nav {
   padding: 2em 0;
 }
 
-.team_image img {
+.articles_image img {
   width: 150px;
   border-radius: 100%;
   border: 5px solid #7582a2;
@@ -353,15 +353,30 @@ nav {
   -o-border-radius: 100%;
 }
 
-.team_texte {
+.articles_texte {
   width: 55%;
   color: #335b8e;
 }
 
-.team_texte p {
+.articles_texte p {
   color: #335b8e;
   font-weight: 500;
   padding: 1em 0;
+}
+
+.arti_lireplus {
+  background-color: #66f85b;
+  width: 200px;
+  height: 45px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  font-weight: bold;
+  line-height: 45px;
 }
 
 /* Section Contact */
